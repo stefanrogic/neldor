@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import { ReadingContainer } from "../components/readingContainer/ReadingContainer";
+import { ReadingContainer } from "../../components-old/readingContainer/ReadingContainer";
 
 export default function Home() {
   const paragraph =
