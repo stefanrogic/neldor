@@ -1,11 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
 
 export function LoginForm({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -31,11 +31,18 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"div">) 
                 </div>
                 <Input id="password" type="password" required />
               </div>
-              <Link href="/">
-                <Button type="submit" className="w-full">
-                  Login
-                </Button>
-              </Link>
+              <div className="flex flex-col gap-2">
+                <Link href="/">
+                  <Button type="submit" className="w-full">
+                    Login
+                  </Button>
+                </Link>
+                <Link href="/">
+                  <Button type="submit" className="w-full" variant="outline">
+                    Try as guest
+                  </Button>
+                </Link>
+              </div>
               <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                 <span className="relative z-10 bg-background px-2 text-muted-foreground">Or continue with</span>
               </div>
