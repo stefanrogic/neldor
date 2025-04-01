@@ -39,7 +39,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"div">) 
                 </Link>
                 <Link href="/">
                   <Button type="submit" className="w-full" variant="outline">
-                    Try as guest
+                    Continue as guest
                   </Button>
                 </Link>
               </div>
