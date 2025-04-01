@@ -14,8 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Neldor",
   description: "Neldor",
+  icons: {
+    icon: [
+      {
+        url: "/globe.svg",
+        href: "/globe.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
