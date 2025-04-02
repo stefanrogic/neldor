@@ -23,7 +23,7 @@ export function TeamSwitcher({
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        <h1 className="font-bold text-2xl">Neldor</h1>
+        <h1 className="font-bold text-2xl p-2">Neldor</h1>
         {/* <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton
