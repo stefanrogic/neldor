@@ -13,7 +13,7 @@ const data = {
   user: {
     name: "Guest",
     email: "Sign Up",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/logo.svg",
   },
   teams: [],
   navMain: [
