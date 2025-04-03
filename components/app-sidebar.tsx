@@ -18,22 +18,18 @@ const data = {
   teams: [],
   navMain: [
     {
-      title: "Playground",
+      title: "Neldor",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
           title: "Your Files",
-          url: "#",
+          url: "/",
         },
         {
           title: "Drafts",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
+          url: "/",
         },
       ],
     },
