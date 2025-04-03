@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { AppSidebar } from "@/components/app-sidebar";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import BreadcrumbLocation from "@/components/ui/breadcrumb-location";
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/globe.svg",
-        href: "/globe.svg",
+        url: "/logo.svg",
+        href: "/logo.svg",
       },
     ],
   },
