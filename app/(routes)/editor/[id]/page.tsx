@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { files } from "@/app/data/data";
+import { files } from "@/data/data";
 
 export default function Editor() {
   const id = usePathname().split("/")[2];
