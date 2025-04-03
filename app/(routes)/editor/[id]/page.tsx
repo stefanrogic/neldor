@@ -23,7 +23,7 @@ export default function Editor() {
 
   // const readMode = file?.content.split(" ");
 
-  const paragraph = file?.content;
+  const paragraph: string | undefined = file?.content;
 
   const [pause, setPause] = useState<boolean>(true);
   const [wordIndex, setWordIndex] = useState<number>(0);
@@ -52,8 +52,8 @@ export default function Editor() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (!pause && wordIndex < paragraph?.length) {
-        setWordIndex(wordIndex < paragraph?.length ? wordIndex + 1 : paragraph?.length);
+      if (!pause && wordIndex < (paragraph as string).length) {
+        setWordIndex(wordIndex < (paragraph as string).length ? wordIndex + 1 : (paragraph as string).length);
         setWord(paragraph?.split(" ")[wordIndex]!);
       } else clearTimeout(timer);
     }, currentSpeed);
@@ -98,8 +98,8 @@ export default function Editor() {
         ""
       )}
 
-      <div className="border-l flex flex-col justify-center items-center gap-10 p-10">
-        <span>{currentSpeed} WPS</span>
+      <div className={`${pause ? "border-l" : ""} flex flex-col justify-center items-center gap-10 p-10`}>
+        {!pause ? <span className="text-xs">{currentSpeed} WPS</span> : ""}
         <h1 className="text-5xl font-bold">{word}</h1>
 
         <div className="flex flex-row gap-5">
