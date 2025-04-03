@@ -10,7 +10,7 @@ export default function Page() {
       {files.map((f, i) => (
         <Link key={i} href={"/editor/" + f.slug} className="flex flex-col gap-y-2">
           <div className="flex justify-center items-center aspect-square bg-gray-200">
-            <FaFileAlt size={50} color="gray" />
+            <FaFileAlt size={75} color="gray" />
           </div>
           <span className="text-sm">{f.name}</span>
         </Link>
