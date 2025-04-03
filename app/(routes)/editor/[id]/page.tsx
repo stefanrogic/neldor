@@ -15,14 +15,6 @@ export default function Editor() {
   const [textChange, setTextChange] = useState<string | undefined>(file?.content);
 
   // READER (napravi posebnu komponentu)
-  // const [currentWordIndex, setCurrentWord] = useState<number>(0);
-  // const [pause, setPause] = useState<boolean>(false);
-
-  // const [defaultSpeed, setDefaultSpeed] = useState<number>(300);
-  // const [currentSpeed, setCurrentSpeed] = useState<number>(300);
-
-  // const readMode = file?.content.split(" ");
-
   const paragraph: string | undefined = file?.content;
 
   const [pause, setPause] = useState<boolean>(true);
